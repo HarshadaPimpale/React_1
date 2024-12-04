@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">A</label> <input type="text" placeholder="Enter the value of A" id="num_a">
+    <label for="">B</label> <input type="text" placeholder="Enter the value of B" id="num_b"><br><br>
+    <div id="result"></div>
+    <button onclick="calculate('add')">Add</button>
+    <button onclick="calculate('sub')">Sub</button>
+    <button onclick="calculate('mul')">Mul</button>
+    <button onclick="calculate('div')">Div</button>
+    <button onclick="calculate('mod')">Mod</button>
+
+    <script>
+        function calculate(operation){
+            let a = parseInt(document.getElementById("num_a").value);
+            let b = parseInt(document.getElementById("num_b").value);
+            let msg = document.getElementById("result");
+            let result;
+            if (operation == 'add'){
+                result = a + b;
+            }
+            else if (operation == 'sub'){
+                result = a - b;
+            }
+            else if (operation == 'mul'){
+                result = a * b;
+            }
+            else if (operation == 'div'){
+                result = a / b;
+            }
+            else if (operation == 'mod'){
+                result = a % b;
+            }
+            msg.innerHTML = "The result is:  " + result;
+        }
+        //function sub(){
+          //  let a = parseInt(document.getElementById("num_a").value);
+          //  let b = parseInt(document.getElementById("num_b").value);
+           // let r = document.getElementById("result");
+           // r.innerHTML = "The subtraction of A and B is:  " + (a-b);
+            
+        //}
+
+       // function mul(){
+        //     let a = parseInt(document.getElementById("num_a").value);
+        //     let b = parseInt(document.getElementById("num_b").value);
+        //     alert(a*b);
+        // }
+
+        // function div(){
+        //     let a = parseInt(document.getElementById("num_a").value);
+        //     let b = parseInt(document.getElementById("num_b").value);
+
+        //     alert(a/b);
+        // }
+
+        // function mod(){
+        //     let a = parseInt(document.getElementById("num_a").value);
+        //     let b = parseInt(document.getElementById("num_b").value);
+
+        //     alert(a%b);
+        // }
+    </script>
+</body>
+</html>
