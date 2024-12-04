@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            height: 50px;
+            width: 100px;
+            margin-top: 30px;
+        }
+        .textbox{
+            width: 120px;
+            height: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" onkeyup="change_color()" class="textbox" id="r" min="0" max="255" placeholder="Red (0 - 255)">
+    <input type="number" onkeyup="change_color()" class="textbox" id="g" min="0" max="255" placeholder="Green (0 - 255)">
+    <input type="number" onkeyup="change_color()" class="textbox" id="b" min="0" max="255" placeholder="Blue (0 - 255)">
+    <div class="box" id="color_box">
+    </div>
+
+    <script>
+        function change_color(){
+            let r = document.getElementById("r").value;
+            let g = document.getElementById("g").value;
+            let b = document.getElementById("b").value;
+            let box = document.getElementById("color_box");
+
+            console.log("rgb(" + r + "," + g + "," + b + ")");
+            box.style.backgroundColor = ("rgb(" + r + "," + g + "," + b + ")")
+        }
+    </script>
+</body>
+</html>

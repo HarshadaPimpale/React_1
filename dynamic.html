@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            height: 50px;
+            width: 100px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="color('red')">Turn into Red</button>
+    <button onclick="color('blue')">Turn into Blue</button>
+    <button onclick="color('green')">Turn into Green</button>
+    <button onclick="color('yellow')">Turn into Yellow</button>
+    <div class="box" id="color_box"></div>
+
+    <script>
+        function color(operation){
+            let box = document.getElementById("color_box")
+            if (operation == 'red'){
+                box.style.backgroundColor = "red"
+            }
+            else if (operation == 'blue'){
+                box.style.backgroundColor = "blue"
+            }
+            else if (operation == 'green'){
+                box.style.backgroundColor = "green"
+            }
+            else if (operation == 'yellow'){
+                box.style.backgroundColor = "yellow"
+            }
+        }
+    </script>
+</body>
+</html>

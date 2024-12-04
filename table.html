@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Number</label>
+    <input type="text" placeholder="Enter the number here" id="num">
+    <label for="">Number Limit</label>
+    <input type="text" placeholder="Enter the number here" id="num_2">
+    <br><br>
+    <button onclick="generate()">Generate table</button>
+    <div id="result"></div>
+
+    <script>
+        function generate(){
+            let a = parseInt(document.getElementById("num").value)
+            let b = parseInt(document.getElementById("num_2").value)
+            let msg = document.getElementById("result")
+            let result = ""
+                for (let i = 1; i <= b; i++){
+                    result += a + ' * ' + i + ' = ' + a*i + "<br>"
+                    
+                }
+            msg.innerHTML = result
+        }
+        
+    </script>
+</body>
+</html>

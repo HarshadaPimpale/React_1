@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter the character</label>
+    <input type="text" id="num"> <br><br>
+    <label for="">Enter the number</label>
+    <input type="text" id="num_1"> <br><br>
+    <button onclick="generate()">Generate</button>
+    <div id="result"></div>
+
+    <script>
+        function generate(){
+            let a = document.getElementById("num").value
+            let b = parseInt(document.getElementById("num_1").value)
+            let msg = document.getElementById("result")
+            let text = ""
+            for (let i = 1;i <= b;i++){   
+                for (let j = 1;j <= i;j++){
+                    text += a + " "           
+                }
+                text += "<br>"
+            }
+            msg.innerHTML = text
+        }
+    </script>
+</body>
+</html>
