@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* changes  done to make page */
+/* for header */
+
+.navheader {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+#nav{
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav ul{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#nav li{
+  display: inline-block;
+  margin: 10px;
+  padding: 0px;
+}
+
+#nav li a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+#nav li:hover{
+  background-color: rgb(100, 98, 98);
+  transition: 500ms;
+  border-bottom: 1px solid white;
+}
+
+/* for tabmenu styling */
+
+#container{
+  width: 80%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#services-tabs{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#services-tabs button{
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  height: 25px;
+}
+
+#services-tabs button:hover{
+  background-color: rgb(160, 140, 160);
+  transition: 200ms;
+}
+
+.serviceDetailBox{
+  background-color: rgba(184, 141, 141, 0.979);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#service-head{
+  font-size: larger;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#service-count{
+  font-size: larger;
+  margin-bottom: 5px;
+}
+
+#service-body{
+  font-size: small;
+}
+
+.activetab{
+  background-color: rgb(160, 140, 160) !important;
+}
+
+/* for food section */
+
+#food{
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#food-choice{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+#food-choice button{
+  margin: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  height: 25px;
+}
+
+#food-choice button:hover{
+  background-color: rgb(160, 140, 160);
+  transition: 200ms;
+}
+
+#food-choice-image{
+  height: 80%;
+}
